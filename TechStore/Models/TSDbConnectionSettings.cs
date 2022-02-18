@@ -1,10 +1,18 @@
 ﻿namespace TechStore.Models
 {
-    public class TSDbConnectionSettings
+    public class TSDbConnectionSettings : ITSDbConnectionSettings
     {
-        public string ConnectionString { get; set; } = null!;
-        public string DbName { get; set; } = null!;
-        public string ProductCollection { get; set; } = null!;
-        public string OrderCollection { get; set; } = null!;
+        public string ConnectionString { get; set; }
+        public string DbName { get; set; }
+        public string UserCollection { get; set; }
+        public string OrderCollection { get; set; }
+    }
+
+    public interface ITSDbConnectionSettings
+    {
+        string ConnectionString { get; set; }
+        string DbName { get; set; }
+        string UserCollection { get; set; }
+        string OrderCollection { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace TechStore.Services
                 tsdbConnectionSettings.Value.DbName);
 
             _userCollection = mongoDB.GetCollection<User>(
-                tsdbConnectionSettings.Value.ProductCollection);
+                tsdbConnectionSettings.Value.UserCollection);
 
             _orderCollection = mongoDB.GetCollection<Order>(
                 tsdbConnectionSettings.Value.OrderCollection);
@@ -35,9 +35,9 @@ namespace TechStore.Services
             await _orderCollection.Find(_ => true).ToListAsync();
 
         // Find by ID
-        public async Task<User?> GetOneUserAsync(string id) =>
+        public async Task<User> GetOneUserAsync(string id) =>
             await _userCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
-        public async Task<Order?> GetOneOrderAsync(string id) =>
+        public async Task<Order> GetOneOrderAsync(string id) =>
             await _orderCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
         // Add query

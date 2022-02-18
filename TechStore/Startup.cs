@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TechStore.Models;
+using TechStore.Services;
 
 namespace TechStore
 {
@@ -29,7 +30,7 @@ namespace TechStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<TSDbConnectionSettings>(
-                Configuration.GetSection(nameof(TSDbConnectionSettings)));
+                Configuration.GetSection("DbConnection"));
 
             services.AddSingleton( sp => sp.GetRequiredService<IOptions<TSDbConnectionSettings>>().Value);
 

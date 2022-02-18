@@ -12,7 +12,7 @@ namespace TechStore.Models
         public string Id { get; set; }
         public User UserData { get; set; }
         public string Products { get; set; }
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
     }
 
 
