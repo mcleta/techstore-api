@@ -1,11 +1,13 @@
-﻿namespace TechStore.Models
+﻿using System;
+
+namespace TechStore.Models
 {
     public class TSDbConnectionSettings : ITSDbConnectionSettings
     {
-        public string ConnectionString { get; set; }
-        public string DbName { get; set; }
-        public string UserCollection { get; set; }
-        public string OrderCollection { get; set; }
+        public string ConnectionString { get; set; } = Environment.GetEnvironmentVariable("DbConnection:ConnectionString");
+        public string DbName { get; set; } = Environment.GetEnvironmentVariable("DbConnection:DbName");
+        public string UserCollection { get; set; } = Environment.GetEnvironmentVariable("DbConnection:UserCollection");
+        public string OrderCollection { get; set; } = Environment.GetEnvironmentVariable("DbConnection:OrderCollection");
     }
 
     public interface ITSDbConnectionSettings

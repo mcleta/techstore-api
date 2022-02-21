@@ -11,7 +11,6 @@ C:\Dev\Padawans\backend\TechStore\TechStore\bin\Debug\net5.0\Microsoft.OpenApi.d
 C:\Dev\Padawans\backend\TechStore\TechStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Dev\Padawans\backend\TechStore\TechStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Dev\Padawans\backend\TechStore\TechStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Dev\Padawans\backend\TechStore\TechStore\obj\Debug\net5.0\TechStore.csproj.AssemblyReference.cache
 C:\Dev\Padawans\backend\TechStore\TechStore\obj\Debug\net5.0\TechStore.GeneratedMSBuildEditorConfig.editorconfig
 C:\Dev\Padawans\backend\TechStore\TechStore\obj\Debug\net5.0\TechStore.AssemblyInfoInputs.cache
 C:\Dev\Padawans\backend\TechStore\TechStore\obj\Debug\net5.0\TechStore.AssemblyInfo.cs
